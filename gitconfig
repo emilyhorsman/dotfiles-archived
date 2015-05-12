@@ -1,0 +1,19 @@
+[user]
+    name = Emily Horsman
+    email = me@emilyhorsman.com
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = vim
+[color]
+    ui = auto
+[alias]
+    a  = add
+    c  = commit -m
+    l  = log --pretty=format:\"%h - %ar | %s%d [%an]\" --graph
+    co = checkout
+    ci = commit
+    ss = status -s
+    st = status
+    br = branch
+    df = diff
+    amend = commit --amend --no-edit
