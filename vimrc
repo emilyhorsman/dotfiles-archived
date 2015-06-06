@@ -4,6 +4,13 @@ runtime! plugin/sensible.vim
 
 execute pathogen#infect()
 
+" OS X: /etc/launchd.conf
+" setenv DEV_HOME_DIRECTORY /path/to/dir/
+" launchctl setenv DEV_HOME_DIRECTORY /path/to/dir/
+if !empty($DEV_HOME_DIRECTORY)
+    cd $DEV_HOME_DIRECTORY
+endif
+
 set omnifunc=syntaxcomplete#Complete
 set number
 
@@ -35,3 +42,5 @@ if has("gui_running")
     set guioptions+=LlRrb
     set guioptions-=LlRrb
 endif
+
+autocmd BufRead,BufNewFile *.mustache set filetype=html
