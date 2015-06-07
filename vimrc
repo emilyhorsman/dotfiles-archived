@@ -1,8 +1,16 @@
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/vim-scripts/Wombat.git'
+Plug 'https://github.com/othree/html5.vim'
+Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
+Plug 'https://github.com/digitaltoad/vim-jade.git'
+Plug 'https://github.com/editorconfig/editorconfig-vim.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/tpope/vim-sensible'
+call plug#end()
+
 " https://github.com/tpope/vim-sensible
 " Load sensible.vim first
 runtime! plugin/sensible.vim
-
-execute pathogen#infect()
 
 " OS X: /etc/launchd.conf
 " setenv DEV_HOME_DIRECTORY /path/to/dir/
@@ -15,7 +23,8 @@ set omnifunc=syntaxcomplete#Complete
 set number
 
 set shiftwidth=4
-set tabstop=2
+set tabstop=4
+set softtabstop=4
 set expandtab
 
 if has("gui_macvim")
