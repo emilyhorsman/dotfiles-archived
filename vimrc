@@ -6,6 +6,8 @@ Plug 'https://github.com/digitaltoad/vim-jade.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/tpope/vim-sensible'
+Plug 'https://github.com/bling/vim-airline.git'
+Plug 'https://github.com/junegunn/vim-easy-align'
 call plug#end()
 
 " https://github.com/tpope/vim-sensible
@@ -45,6 +47,9 @@ nnoremap <Leader>h :split<enter>
 nnoremap <Leader>v :vsplit<enter>
 
 imap <C-space> <Esc>
+
+vmap <Enter> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " Remove scrollbars
 if has("gui_running")
