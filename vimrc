@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/vim-scripts/Wombat.git'
+Plug 'https://github.com/michalbachowski/vim-wombat256mod.git'
 Plug 'https://github.com/othree/html5.vim'
 Plug 'https://github.com/ntpeters/vim-better-whitespace.git'
 Plug 'https://github.com/digitaltoad/vim-jade.git'
@@ -8,6 +8,8 @@ Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/tpope/vim-sensible'
 Plug 'https://github.com/bling/vim-airline.git'
 Plug 'https://github.com/junegunn/vim-easy-align'
+Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/kchmck/vim-coffee-script.git'
 call plug#end()
 
 " https://github.com/tpope/vim-sensible
@@ -29,9 +31,7 @@ set tabstop=4
 set softtabstop=4
 set expandtab
 
-if has("gui_macvim")
-    colorscheme wombat
-endif
+colorscheme wombat256mod
 
 let mapleader=","
 
